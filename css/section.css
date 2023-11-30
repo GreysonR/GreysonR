@@ -42,11 +42,13 @@
 	flex-wrap: nowrap;
 
 	font-family: var(--body-font);
+	font-weight: 400;
 	font-size: 1em;
 }
 
 .about-content p {
-	margin-right: 40px;	
+	margin-right: 50px;
+	line-height: 170%;
 	color: var(--dark);
 }
 
