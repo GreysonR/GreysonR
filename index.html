@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Greyon Rockwell Portfolio</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="./css/variables.css">
+	<style>
+		body {
+			background-color: var(--light-1);
+			margin: 0;
+			padding: 0;
+		}
+		::selection {
+			background-color: #88888850;
+		}
+	</style>
+	<link rel="stylesheet" href="./css/navbar.css">
+	<link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+	<div class="navbar">
+		<div></div> <!--Dummy div to take up grid space-->
+		<div class="navbar-center">
+			<div class="navbar-item">About</div>
+			<div class="navbar-item">Experience</div>
+			<div class="navbar-item">Projects</div>
+			<div class="navbar-item">Contact</div>
+		</div>
+		<div class="navbar-right">
+			<div class="navbar-button align-right">Resume</div>
+			<div class="navbar-button align-right">Hire me</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="header-background" id="header-background"></div>
+		<script>
+			function scaleHeaderBackground() {
+				let bg = document.getElementById("header-background");
+				bg.style.width = "900px";
+				bg.style.height = "400px";
+				bg.style.transform = `scale(${window.innerWidth / 900}, ${Math.min(1, (window.innerWidth / 900) ** 0.4)})`;
+			}
+			scaleHeaderBackground();
+			window.addEventListener("resize", scaleHeaderBackground);
+		</script>
+		<div class="header-title">
+			<h1>Hi, I'm Greyson Rockwell</h1>
+			<h2>I design and build things</h2>
+			<div class="chevron"></div>
+		</div>
+	</div>
+</body>
+</html>

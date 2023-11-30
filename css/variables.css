@@ -1,0 +1,10 @@
+:root {
+	--dark: #233D4D;
+	--light-1: #F0EEEA;
+	--light-2: #FFFFFF;
+	--primary: #FE7F2D;
+	--secondary: #FCCA46;
+
+	--header-font: "Poppins", "Arial", sans-serif;
+	--body-font: "Noto Sans", "Arial", sans-serif;
+}

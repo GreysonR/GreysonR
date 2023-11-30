@@ -1,0 +1,56 @@
+.header {
+	width: 100vw;
+	height: 900px;
+
+	background-color: var(--dark);
+	position: relative;
+}
+.header-background {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	/* z-index: -1; */
+
+	width: 100vw;
+	height: 400px;
+	transform-origin: bottom left;
+
+	background-image: url("../img/layer-waves.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+.header-title {
+	width: 100vw;
+	height: 700px;
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+
+	font-family: var(--header-font);
+	color: var(--light-1);
+	text-align: center;
+
+	position: relative;
+	z-index: 1;
+}
+.header-title * {
+	background-color: var(--dark);
+	border-radius: 5px;
+	padding-left:  0.3em;
+	padding-right: 0.3em;
+}
+
+h1 {
+	font-size: 4em;
+	margin: 0;
+}
+h2 {
+	font-family: var(--body-font);
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-top: 0.5em;
+}
